@@ -1,0 +1,91 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-background: #C9B39B;
+  --secondary-background: #FFFFF4;
+  --chrome-background: #DBA745;
+  --text-color: #32363F;
+  --accent-light: #ED8F11;
+  --accent-dark: #C27A18;
+
+  --padding: 20px;
+}
+
+body {
+  /* style */
+  background: var(--primary-background);
+  font-family: 'Space Grotesk';
+  color: var(--text-color);
+
+  /* layout */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  background: var(--chrome-background);
+  padding: var(--padding);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: var(--padding);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;  
+}
+
+li {
+  width: 175px;
+  height: 145px;
+  display: grid;
+  grid-template-rows: autos 1fr auto;
+  place-items: center;
+  background: #FFFFF4;
+  border: 3px solid var(--accent-dark);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 250ms ease-in;
+}
+
+li:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+img {
+  width: 64px;
+}
+
+button {
+  width: 33px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+button:hover {
+  width: 100px;
+}
+
+button:active {
+  background: var(--accent-light);
+}
+
+
+footer {
+  background: var(--secondary-background);
+  opacity: 0.75;
+  padding: 5px var(--padding);
+}
